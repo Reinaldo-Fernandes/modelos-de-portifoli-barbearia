@@ -15,7 +15,8 @@
 
   main {
     padding: 1rem;
-    background-image: url('/src/img/barbeariamobile.png'); /* Certifique-se de que o caminho está certo */
+    background-image: url('https://raw.githubusercontent.com/reinaldo-fernandes/modelos-de-portifoli-barbearia/main/src/img/barbeariamobile.png');
+     /*background-image: url('/src/img/barbeariamobile.png'); */
   }
 
   #servicos {
