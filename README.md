@@ -40,11 +40,3 @@ O site conta com:
 
 ---
 
-## 📱 Contato
-
-Entre em contato ou siga nas redes:
-
-- WhatsApp: [Clique aqui](https://wa.me/5584999824438)
-- Instagram: [@barbeariaestilo](https://instagram.com/barbeariaestilo)
-
----
