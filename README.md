@@ -34,9 +34,7 @@ O site conta com:
 
 ---
 
-## 🔗 Link para demonstração
+## 💈 Barbearia Online
 
-[🔗 Ver site online]([https://seuprojeto.vercel.app](https://reinaldo-fernandes.github.io/modelos-de-portifoli-barbearia/))
-
----
+🔗 [Ver site online](https://reinaldo-fernandes.github.io/modelos-de-portifoli-barbearia/)
 
