@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barbearia Estilo</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/mobile.css" media="(max-width: 768px)">
+</head>
+
+<body>
+
+  <header>
+    <h1><i class="fa-solid fa-scissors"></i> Barbearia Estilo</h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="abrirModal"><i class="fa-solid fa-calendar-check"></i> Agendamento</a></li>
+      </ul>
+    </nav>
+
+    <!-- Modal de Agendamento -->
+    <div id="modalAgendamento" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="tituloModal">
+      <div class="modal-content">
+        <span class="fechar-modal" role="button" aria-label="Fechar Modal">&times;</span>
+        <h2 id="tituloModal"><i class="fa-solid fa-calendar-plus"></i> Agendar Horário</h2>
+
+        <div id="mensagemFeedback" class="mensagem-feedback hidden">
+          Agendamento enviado com sucesso! ✅
+        </div>
+
+        <form id="formAgendamento">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+
+          <label for="servico">Serviço:</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione</option>
+            <option value="corte">Corte Masculino</option>
+            <option value="barba">Barba Estilizada</option>
+            <option value="limpeza">Limpeza de Pele</option>
+          </select>
+
+          <label for="data">Data:</label>
+          <input type="date" id="data" name="data" required>
+
+          <label for="hora">Hora:</label>
+          <input type="time" id="hora" name="hora" required>
+
+          <button type="submit" class="botao-agendar"><i class="fa-solid fa-check"></i> Confirmar</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="overlay">
+      <section id="servicos">
+
+        <!-- CORTE MASCULINO -->
+        <article class="servico servico-direita">
+          <div class="texto">
+            <h2><i class="fa-solid fa-scissors"></i> Corte Masculino</h2>
+            <p>Estilo moderno ou clássico, do jeito que você preferir. Atendimento com hora marcada e pontualidade.</p>
+          </div>
+          <div class="imagem">
+            <img src="./src/img/cabelo/corte-1.png" alt="Corte masculino">
+          </div>
+        </article>
+
+        <!-- BARBA ESTILIZADA -->
+        <article class="servico servico-esquerda">
+          <div class="imagem">
+            <img src="./src/img/barba/barba-1.jpeg" alt="Barba estilizada">
+          </div>
+          <div class="texto">
+            <h2><i class="fa-solid fa-user"></i> Barba Estilizada</h2>
+            <p>Modelagem de barba com navalha, toalha quente e produtos especiais pra dar aquele visual de respeito.</p>
+          </div>
+        </article>
+
+        <!-- LIMPEZA DE PELE -->
+        <article class="servico servico-direita">
+          <div class="texto">
+            <h2><i class="fa-solid fa-spa"></i> Limpeza de Pele</h2>
+            <p>Que tal uma pele mais limpa e saudável? Agende já sua limpeza de pele!</p>
+          </div>
+          <div class="imagem">
+            <img src="./src/img/limpeza/limpeza-1.png" alt="Limpeza de pele">
+          </div>
+        </article>
+
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <p>© 2025 Barbearia Estilo</p>
+          <div class="footer-icons">
+            <a href="https://wa.me/5584999824438" target="_blank" aria-label="WhatsApp da Barbearia">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/barbeariaestilo" target="_blank" aria-label="Instagram da Barbearia">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <!-- script.js continua carregando para o formulário -->
+  <script src="./src/js/script.js"></script>
+</body>
+</html>
