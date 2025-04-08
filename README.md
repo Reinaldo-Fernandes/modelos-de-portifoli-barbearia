@@ -36,7 +36,7 @@ O site conta com:
 
 ## 🔗 Link para demonstração
 
-[🔗 Ver site online](https://seuprojeto.vercel.app) <!-- atualize com o link real da Vercel ou GitHub Pages -->
+[🔗 Ver site online]([https://seuprojeto.vercel.app](https://reinaldo-fernandes.github.io/modelos-de-portifoli-barbearia/))
 
 ---
 
